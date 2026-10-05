@@ -1,33 +1,49 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-title-tr="Destek · Lokma" data-title-en="Support · Lokma">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lokma Destek · Support</title>
-  <meta name="description" content="Lokma – Kalori Ölçer için destek ve iletişim. Support and contact for Lokma, the calorie counter that measures your plate.">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="stylesheet" href="style.css">
-  <script src="lang.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Destek · Lokma</title>
+  <meta name="description" content="Lokma – Kalori Ölçer destek: nasıl kullanılır, sık sorulan sorular, iletişim. Lokma support: how to use, FAQ and contact.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="/assets/apps/lokma-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apps/lokma-icon.png">
+  <link rel="preload" href="/assets/fonts/mona-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js"></script>
 </head>
-<body>
-<div class="wrap">
-  <header class="top">
-    <img src="icon.png" alt="" width="56" height="56">
-    <div>
-      <div class="name">Lokma</div>
-      <div class="sub">Kalori Ölçer · Calorie Counter</div>
+<body class="app-lokma">
+<a class="skip" href="#content"><span data-lang="tr">İçeriğe geç</span><span data-lang="en">Skip to content</span></a>
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="/">Alperen Sağlam</a>
+    <span class="crumb-sep" aria-hidden="true"></span>
+    <a class="brand-app" href="/lokma-app/"><img src="/assets/apps/lokma-icon.png" alt="" width="28" height="28"><span>Lokma</span></a>
+    <nav class="nav" aria-label="Menü">
+      <a class="nav-wide" href="/#apps"><span data-lang="tr">Tüm uygulamalar</span><span data-lang="en">All apps</span></a>
+      <div class="lang" role="group" aria-label="Dil / Language">
+        <button type="button" data-set="tr" aria-pressed="true">TR</button>
+        <button type="button" data-set="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="tabs-wrap">
+  <div class="app-hero">
+    <div class="app-hero-in">
+      <img class="icon" src="/assets/apps/lokma-icon.png" alt="" width="88" height="88">
+      <div class="titles">
+        <div class="app-name">Lokma</div>
+        <p class="tagline"><span data-lang="tr">Kalori Ölçer</span><span data-lang="en">Calorie Scanner</span></p>
+      </div>
+      <a class="badge" href="https://apps.apple.com/app/id6815305987"><img src="/assets/badges/app-store-en.svg" alt="App Store'dan indir / Download on the App Store" width="132" height="44"></a>
     </div>
-    <div class="spacer"></div>
-    <div class="lang" role="group" aria-label="Dil / Language">
-      <button type="button" data-set="tr" aria-pressed="true">TR</button>
-      <button type="button" data-set="en" aria-pressed="false">EN</button>
-    </div>
-  </header>
-
-  <!-- ─────────────────────────── Türkçe ─────────────────────────── -->
-  <main data-lang="tr" lang="tr">
-    <h1>Destek</h1>
+  </div>
+  <nav class="tabs" aria-label="Lokma"><a href="/lokma-app/" aria-current="page"><span data-lang="tr">Nasıl kullanılır</span><span data-lang="en">How to use</span></a><a href="/lokma-app/privacy/"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span></a></nav>
+</div>
+<main class="doc" id="content">
+<div data-lang="tr" lang="tr">
+<h1>Destek</h1>
     <p class="lead">Lokma, tabağınızdaki yemeği kamerayla ölçüp kalori ve makrolarını hesaplayan bir iPhone uygulamasıdır. Bir sorun mu yaşıyorsunuz, bir sorunuz ya da öneriniz mi var? Bize yazın.</p>
 
     <section class="contact" aria-labelledby="contact-tr">
@@ -37,7 +53,13 @@
       <a class="button" href="mailto:alperensaglam177@gmail.com?subject=Lokma%20Destek">E-posta gönder</a>
     </section>
 
-    <h2>Sık sorulan sorular</h2>
+    <h2>Nasıl kullanılır</h2>
+<ol class="steps">
+  <li><strong>Tabağı tara.</strong> Ana ekranda <b>Tabağı tara</b>'ya dokunun ve tabağı çerçeveye alın. Lokma yemeği tanır, porsiyonu ölçer ve kalorisini hesaplar.</li>
+  <li><strong>Kontrol et ve kaydet.</strong> Onay ekranında gramı düzeltebilir, yanlış tanınan yemeği değiştirebilir ve öğünü kaydedebilirsiniz.</li>
+  <li><strong>Ya da elle ekle.</strong> <b>Elle ekle</b> ile besin listesinden yemek seçin ya da listede olmayan bir yemeği adı ve kalorisiyle girin. Elle girişler ücretsizdir.</li>
+</ol>
+<h2>Sık sorulan sorular</h2>
     <div class="faq">
       <details>
         <summary>Lokma nasıl çalışır?</summary>
@@ -86,11 +108,9 @@
       <a href="privacy/">Gizlilik politikası</a>
       <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Kullanım koşulları (EULA)</a>
     </div>
-  </main>
-
-  <!-- ─────────────────────────── English ─────────────────────────── -->
-  <main data-lang="en" lang="en">
-    <h1>Support</h1>
+</div>
+<div data-lang="en" lang="en">
+<h1>Support</h1>
     <p class="lead">Lokma is an iPhone app that measures the food on your plate with the camera and works out its calories and macros. Having a problem, a question or a suggestion? Write to us.</p>
 
     <section class="contact" aria-labelledby="contact-en">
@@ -100,7 +120,13 @@
       <a class="button" href="mailto:alperensaglam177@gmail.com?subject=Lokma%20Support">Send an email</a>
     </section>
 
-    <h2>Frequently asked questions</h2>
+    <h2>How to use</h2>
+<ol class="steps">
+  <li><strong>Scan your plate.</strong> Tap <b>Scan plate</b> on the home screen and frame your plate. Lokma recognises the food, measures the portion and works out its calories.</li>
+  <li><strong>Check and save.</strong> On the review screen you can correct the grams, swap a food that was recognised wrongly and save the meal.</li>
+  <li><strong>Or add it by hand.</strong> Use <b>Add manually</b> to pick a food from the list, or enter one that isn't listed with its name and calories. Manual entries are free.</li>
+</ol>
+<h2>Frequently asked questions</h2>
     <div class="faq">
       <details>
         <summary>How does Lokma work?</summary>
@@ -149,9 +175,13 @@
       <a href="privacy/">Privacy policy</a>
       <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of use (EULA)</a>
     </div>
-  </main>
-
-  <footer>© 2026 Alperen Sağlam · Lokma – Kalori Ölçer</footer>
 </div>
+</main>
+<footer class="foot">
+  <span>© 2026 Alperen Sağlam</span>
+  <span class="spacer"></span>
+  <a href="/"><span data-lang="tr">Tüm uygulamalar</span><span data-lang="en">All apps</span></a>
+  <a href="mailto:alperensaglam177@gmail.com"><span data-lang="tr">E-posta</span><span data-lang="en">Email</span></a>
+</footer>
 </body>
 </html>

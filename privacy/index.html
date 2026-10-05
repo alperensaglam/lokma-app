@@ -1,33 +1,49 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-title-tr="Gizlilik Politikası · Lokma" data-title-en="Privacy Policy · Lokma">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lokma Gizlilik · Privacy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gizlilik Politikası · Lokma</title>
   <meta name="description" content="Lokma – Kalori Ölçer gizlilik politikası. Privacy policy for Lokma: no accounts, no data collection, everything stays on your iPhone.">
-  <link rel="icon" type="image/png" href="../favicon.png">
-  <link rel="apple-touch-icon" href="../icon.png">
-  <link rel="stylesheet" href="../style.css">
-  <script src="../lang.js"></script>
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="/assets/apps/lokma-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apps/lokma-icon.png">
+  <link rel="preload" href="/assets/fonts/mona-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js"></script>
 </head>
-<body>
-<div class="wrap policy">
-  <header class="top">
-    <a href="../"><img src="../icon.png" alt="Lokma" width="56" height="56"></a>
-    <div>
-      <div class="name">Lokma</div>
-      <div class="sub">Kalori Ölçer · Calorie Counter</div>
+<body class="app-lokma">
+<a class="skip" href="#content"><span data-lang="tr">İçeriğe geç</span><span data-lang="en">Skip to content</span></a>
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="/">Alperen Sağlam</a>
+    <span class="crumb-sep" aria-hidden="true"></span>
+    <a class="brand-app" href="/lokma-app/"><img src="/assets/apps/lokma-icon.png" alt="" width="28" height="28"><span>Lokma</span></a>
+    <nav class="nav" aria-label="Menü">
+      <a class="nav-wide" href="/#apps"><span data-lang="tr">Tüm uygulamalar</span><span data-lang="en">All apps</span></a>
+      <div class="lang" role="group" aria-label="Dil / Language">
+        <button type="button" data-set="tr" aria-pressed="true">TR</button>
+        <button type="button" data-set="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="tabs-wrap">
+  <div class="app-hero">
+    <div class="app-hero-in">
+      <img class="icon" src="/assets/apps/lokma-icon.png" alt="" width="88" height="88">
+      <div class="titles">
+        <div class="app-name">Lokma</div>
+        <p class="tagline"><span data-lang="tr">Kalori Ölçer</span><span data-lang="en">Calorie Scanner</span></p>
+      </div>
+      <a class="badge" href="https://apps.apple.com/app/id6815305987"><img src="/assets/badges/app-store-en.svg" alt="App Store'dan indir / Download on the App Store" width="132" height="44"></a>
     </div>
-    <div class="spacer"></div>
-    <div class="lang" role="group" aria-label="Dil / Language">
-      <button type="button" data-set="tr" aria-pressed="true">TR</button>
-      <button type="button" data-set="en" aria-pressed="false">EN</button>
-    </div>
-  </header>
-
-  <!-- ─────────────────────────── Türkçe ─────────────────────────── -->
-  <main data-lang="tr" lang="tr">
-    <h1>Gizlilik Politikası</h1>
+  </div>
+  <nav class="tabs" aria-label="Lokma"><a href="/lokma-app/"><span data-lang="tr">Nasıl kullanılır</span><span data-lang="en">How to use</span></a><a href="/lokma-app/privacy/" aria-current="page"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span></a></nav>
+</div>
+<main class="doc" id="content">
+<div data-lang="tr" lang="tr">
+<h1>Gizlilik Politikası</h1>
     <p class="muted">Son güncelleme: 1 Ekim 2026</p>
     <p class="callout">Kısaca: Lokma hiçbir kişisel veri toplamaz. Uygulamada internet bağlantısı kodu yoktur; verileriniz telefonunuzdan çıkmaz.</p>
 
@@ -69,11 +85,9 @@
 
     <h2>İletişim</h2>
     <p>Sorularınız için: <a href="mailto:alperensaglam177@gmail.com">alperensaglam177@gmail.com</a> · <a href="../">Destek sayfası</a></p>
-  </main>
-
-  <!-- ─────────────────────────── English ─────────────────────────── -->
-  <main data-lang="en" lang="en">
-    <h1>Privacy Policy</h1>
+</div>
+<div data-lang="en" lang="en">
+<h1>Privacy Policy</h1>
     <p class="muted">Last updated: October 1, 2026</p>
     <p class="callout">In short: Lokma collects no personal data. The app contains no networking code; your data never leaves your phone.</p>
 
@@ -115,9 +129,13 @@
 
     <h2>Contact</h2>
     <p>Questions: <a href="mailto:alperensaglam177@gmail.com">alperensaglam177@gmail.com</a> · <a href="../">Support page</a></p>
-  </main>
-
-  <footer>© 2026 Alperen Sağlam · Lokma – Kalori Ölçer</footer>
 </div>
+</main>
+<footer class="foot">
+  <span>© 2026 Alperen Sağlam</span>
+  <span class="spacer"></span>
+  <a href="/"><span data-lang="tr">Tüm uygulamalar</span><span data-lang="en">All apps</span></a>
+  <a href="mailto:alperensaglam177@gmail.com"><span data-lang="tr">E-posta</span><span data-lang="en">Email</span></a>
+</footer>
 </body>
 </html>
